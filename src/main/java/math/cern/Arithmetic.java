@@ -332,15 +332,15 @@ public final class Arithmetic {
      * The binomial coefficient is defined as
      * <tt>(n * n-1 * ... * n-k+1 ) / ( 1 * 2 * ... * k )</tt>.
      * <ul>
-     * <li>k &lt; 0{@code : 0}.
-     * <li>k==0{@code : 1}.
-     * <li>k==1{@code : n}.
-     * <li>else: {@code (n * n-1 * ... * n-k+1 ) / ( 1 * 2 * ... * k )}.
+     * <li>k &lt; 0{@code : 0}
+     * <li>k==0{@code : 1}
+     * <li>k==1{@code : n}
+     * <li>else: {@code (n * n-1 * ... * n-k+1 ) / ( 1 * 2 * ... * k )}
      * </ul>
      * 
      * @param n the n in "n choose k"
      * @param k the k in "n choose k"
-     * @return the binomial coefficient.
+     * @return the binomial coefficient
      */
     public static double binomial(final double n, final long k) {
         if (k < 0) {
@@ -369,15 +369,15 @@ public final class Arithmetic {
      * <p>
      * The binomial coefficient is defined as
      * <ul>
-     * <li>k &lt; 0{@code : 0}.
-     * <li>k==0 || k==n{@code : 1}.
-     * <li>k==1 || k==n-1{@code : n}.
-     * <li>else: {@code (n * n-1 * ... * n-k+1 ) / ( 1 * 2 * ... * k )}.
+     * <li>k &lt; 0{@code : 0}
+     * <li>k==0 || k==n{@code : 1}
+     * <li>k==1 || k==n-1{@code : n}
+     * <li>else: {@code (n * n-1 * ... * n-k+1 ) / ( 1 * 2 * ... * k )}
      * </ul>
      * 
      * @param n the n in "n choose k"
      * @param k the k in "n choose k"
-     * @return the binomial coefficient.
+     * @return the binomial coefficient
      */
     public static double binomial(final long n, long k) {
         if (k < 0) {
@@ -422,7 +422,7 @@ public final class Arithmetic {
     /**
      * Returns the smallest <code>long &gt;= value</code>.
      * <p>
-     * Examples: {@code 1.0 -> 1, 1.2 -> 2, 1.9 -> 2}.
+     * Examples: {@code 1.0 -> 1, 1.2 -> 2, 1.9 -> 2}
      * <p>
      * This method is safer than using (long) Math.ceil(value), because of
      * possible rounding error.
@@ -436,7 +436,7 @@ public final class Arithmetic {
 
     /**
      * Instantly returns the factorial <tt>k!</tt>.
-     * If {@code k >= 171} {@link Double#POSITIVE_INFINITY} is returned.
+     * If {@code k >= 171}, {@link Double#POSITIVE_INFINITY} is returned.
      * 
      * @param k an integer &gt;= 0
      * @return the factorial of k
@@ -460,8 +460,8 @@ public final class Arithmetic {
      * <b>Examples:</b>
      * 
      * <pre>
-     * 1.0 {@code ->} 1, 1.2 {@code ->} 1, 1.9 {@code ->} 1
-     * 2.0 {@code ->} 2, 2.2 {@code ->} 2, 2.9 {@code ->} 2
+     * {@code 1.0 -> 1, 1.2 -> 1, 1.9 -> 1}
+     * {@code 2.0 -> 2, 2.2 -> 2, 2.9 -> 2}
      * </pre>
      * 
      * This method is safer than using (long) Math.floor(value), because of
@@ -503,7 +503,7 @@ public final class Arithmetic {
      * O(1). For <tt>k &gt;= 30</tt> uses Stirlings approximation.
      * 
      * @param k
-     *            must hold <tt>k &gt;= 0</tt>.
+     *            must hold <tt>k &gt;= 0</tt>
      * @return log factorial of k
      */
     public static double logFactorial(final int k) {
@@ -519,7 +519,7 @@ public final class Arithmetic {
     }
 
     /**
-     * Returns the value of {@code n!/n^n}.
+     * Returns the value of <tt>n!/n^n</tt>.
      * @param n an integer &gt;= 0
      * @return the value of {@code n!/n^n}
      */
@@ -541,7 +541,7 @@ public final class Arithmetic {
      * Instantly returns the factorial <tt>k!</tt>.
      * 
      * @param k
-     *            must hold {@code k >= 0 && k < 21}.
+     *            must hold {@code k >= 0 && k < 21}
      * @return the factorial
      */
     public static long longFactorial(final int k) {
@@ -556,7 +556,7 @@ public final class Arithmetic {
     }
 
     /**
-     * Returns the StirlingCorrection.
+     * Returns the Stirling correction.
      * <p>
      * Correction term of the Stirling approximation for <tt>log(k!)</tt>
      * (series in 1/k, or table values for small k) with int parameter k.
