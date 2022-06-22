@@ -31,12 +31,12 @@
 
     <dependencies>
         <!-- we don't really need math-base at runtime as only some MathConsts get baked in during compilation -->
-        <dependency>
+        <!--dependency>
             <groupId>net.sourceforge.streamsupport</groupId>
             <artifactId>math-base</artifactId>
             <version>1.0.0</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency-->
     </dependencies>
 
     <properties>
